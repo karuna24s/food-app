@@ -1,5 +1,7 @@
 import React from 'react';
 import CartItem from './CartItem';
+import Header from './Header';
+import Footer from './Footer';
 
 class CartItemList extends React.Component{
   render(){

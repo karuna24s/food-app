@@ -1,5 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import Header from './Header';
+import Footer from './Footer';
 
 class CartItem extends React.Component{
     render(){
@@ -10,7 +12,7 @@ class CartItem extends React.Component{
       <div className="col-sm-6 col-md-4">
           <div className="thumbnail">
               <div className="caption">
-                <h3>{itemTitle}</h3>
+                <h4>{itemTitle}</h4>
                 <p>{price}</p>
                 {/* <p><a href="#" className="btn btn-primary" role="button">{selectItem}</a></p> */}
                 <button type="button" onClick={() => this.AddToCart()} className="btn btn-default">{selectItem}</button>
