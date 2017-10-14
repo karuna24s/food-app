@@ -1,27 +1,20 @@
 import React from 'react';
-import Header from './Header';
-import CartItemList from './CartItemList';
-import CartItem from './CartItem';
-import Footer from './Footer';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-import PropTypes from 'prop-types';
+import {BrowserRouter as Router, Link} from 'react-router-dom';
 
-const App = () => (
-  <Router>
-    <div>
-      <Route exact path="/" component={Home} />
-    </div>
-  </Router>
-)
-
-class Home extends React.Component{
-  render(){
+class App extends React.Component {
+  render() {
     return (
-      <div className="container">
-        <Header />
-        <CartItemList />
-        <Footer />
-      </div>
+      <Router>
+        <div className="App">
+          <h2>Food App</h2>
+          <ul className="foodItems">
+            <li><Link to={'/checkout'}>Wine $20</Link></li>
+            <li><Link to={'/checkout'}>Chocolate $5</Link></li>
+            <li><Link to={'/checkout'}>Sushi $10</Link></li>
+            <li><Link to={'/checkout'}>Avocado Toast $8</Link></li>
+          </ul>
+        </div>
+      </Router>
     );
   }
 }
