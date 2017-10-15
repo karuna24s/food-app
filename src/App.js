@@ -1,11 +1,12 @@
 import React from 'react';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
+import Checkout from './Checkout';
 
 class App extends React.Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div className="container">
           <h2>Food App</h2>
           <ul className="foodItems">
             <li><Link to={'/checkout'}>Wine $20</Link></li>
