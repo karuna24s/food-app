@@ -11,7 +11,7 @@ class CartItem extends React.Component {
   render() {
     return (
         <div className="row">
-          <div className="thumbnail">
+          <div className="col-sm-4">
             <p>{this.props.itemTitle} Cost: {this.props.price}</p>
           </div>
         </div>

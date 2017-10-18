@@ -6,20 +6,23 @@ const Sushi = () => (
     <Route>
       <div className="container">
         <CartItem itemTitle="Add Sushi to cart?" price="$10" />
-        <p>
-          <Link to={"SushiConfirm"}>
-            <button type="button" className="btn btn-primary">
-              Add To Cart
-            </button>
-          </Link>
-        </p>
-        <p>
-          <Link to={"/"}>
-            <button type="button" className="btn btn-primary">
-              Cancel
-            </button>
-          </Link>
-        </p>
+        <div className="btn-toolbar">
+          <p>
+            <Link to={"SushiConfirm"}>
+              <button type="button" className="btn btn-primary btn-sm btn">
+                Add To Cart
+              </button>
+            </Link>
+          </p>
+          <span style={{width:30}}></span>
+          <p>
+            <Link to={"/"}>
+              <button type="button" className="btn btn-primary btn-sm btn">
+                Cancel
+              </button>
+            </Link>
+          </p>
+        </div>
       </div>
     </Route>
   )
