@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from "./Header";
-import Footer from "./Footer";
 import Main from './Main'
 
 // import {BrowserRouter as Router, Link} from 'react-router-dom';
@@ -12,7 +11,6 @@ class App extends React.Component {
       <div className="container">
         <Header />
         <Main />
-        <Footer />
       </div>
     )
   }

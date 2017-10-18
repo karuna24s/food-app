@@ -12,10 +12,7 @@ class CartItem extends React.Component {
     return (
         <div className="row">
           <div className="thumbnail">
-            <div className="caption">
-              <h3>{this.props.itemTitle}</h3>
-              <h4>Cost: {this.props.price}</h4>
-            </div>
+            <p>{this.props.itemTitle} Cost: {this.props.price}</p>
           </div>
         </div>
     );
