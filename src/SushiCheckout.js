@@ -5,7 +5,7 @@ import CartItem from './CartItem'
 const Sushi = () => (
     <Route>
       <div className="container">
-        <CartItem itemTitle="Add Sushi to cart?" price="$10" />
+        <CartItem itemTitle="Add Sushi to cart?" price="$10"/>
         <div className="btn-toolbar">
           <p>
             <Link to={"SushiConfirm"}>

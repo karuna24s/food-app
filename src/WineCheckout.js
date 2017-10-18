@@ -5,7 +5,7 @@ import CartItem from './CartItem'
 const Wine = () => (
   <Route>
     <div className="container">
-      <CartItem itemTitle="Add Wine to cart?" price="$20" />
+      <CartItem itemTitle="Add Wine to cart?" price="$20"/>
       <div className="btn-toolbar">
         <p>
           <Link to={"WineConfirm"}>
