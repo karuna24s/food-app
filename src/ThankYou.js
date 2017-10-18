@@ -7,7 +7,7 @@ const ThankYou = () => (
       <p>Thank you for your purchase!</p>
       <p>
         <Link to={"/"}>
-          <button type="button" className="btn btn-primary">
+          <button type="button" className="btn btn-primary btn-sm btn">
             Back to Food App Main page
           </button>
         </Link>
